@@ -10,9 +10,10 @@ public class BrowserHistory01 {
         String input = scan.nextLine();
         while (!input.equals("Home")) {
             if (input.equals("back")) {
-                if (url.size()==1) {
+                if (url.size()<=1) {
                     System.out.println("no previous URLs");
                 } else {
+                    url.pop();
                     System.out.println(url.peek());
                 }
             } else {
