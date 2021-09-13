@@ -1,7 +1,7 @@
 import java.util.ArrayDeque;
 import java.util.Scanner;
 
-public class HotPotato06 {
+public class MathPotato07 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
@@ -13,12 +13,7 @@ public class HotPotato06 {
         for (String e : kids) {
             queue.offer(e);
         }
-        while (queue.size() > 1) {
-            for (int i = 1; i < n; i++) {
-                queue.offer(queue.poll());
-            }
-            System.out.printf("Removed %s%n", queue.poll());
-        }
-        System.out.printf("Last is %s%n", queue.poll());
+
+        
     }
 }
