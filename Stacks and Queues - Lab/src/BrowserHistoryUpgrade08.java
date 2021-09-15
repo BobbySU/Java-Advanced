@@ -14,6 +14,7 @@ public class BrowserHistoryUpgrade08 {
             if (input.equals("back")) {
                 if (url.size() <= 1) {
                     System.out.println("no previous URLs");
+                    forward = "";
                 } else {
                     forward = url.peek();
                     url.pop();
