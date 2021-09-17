@@ -11,9 +11,8 @@ public class BasicStackOperations02 {
         int s = scan.nextInt();
         int x = scan.nextInt();
 
-        String[] number = scan.nextLine().split("\\s+");
         for (int i = 0; i < n; i++) {
-            stack.push(Integer.parseInt(number[i]));
+            stack.push(scan.nextInt());
         }
         for (int i = 0; i < s; i++) {
             stack.pop();
