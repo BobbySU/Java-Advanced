@@ -8,6 +8,7 @@ public class ReverseNumbersWithAStack01 {
 
         ArrayDeque<Integer> stack = new ArrayDeque<>();
         Arrays.stream(scan.nextLine().split("\\s+")).forEach(e -> stack.push(Integer.parseInt(e)));
+
         for (Integer e : stack) {
             System.out.print(stack.pop() + " ");
         }

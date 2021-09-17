@@ -1,4 +1,5 @@
 import java.util.ArrayDeque;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class BasicStackOperations02 {
@@ -6,10 +7,10 @@ public class BasicStackOperations02 {
         Scanner scan = new Scanner(System.in);
 
         ArrayDeque<Integer> stack = new ArrayDeque<>();
-        String[] input = scan.nextLine().split("\\s+");
-        int n = Integer.parseInt(input[0]);
-        int s = Integer.parseInt(input[1]);
-        int x = Integer.parseInt(input[2]);
+        int n = scan.nextInt();
+        int s = scan.nextInt();
+        int x = scan.nextInt();
+
         String[] number = scan.nextLine().split("\\s+");
         for (int i = 0; i < n; i++) {
             stack.push(Integer.parseInt(number[i]));
@@ -20,9 +21,9 @@ public class BasicStackOperations02 {
         if (stack.isEmpty()) {
             System.out.println(0);
         } else if (stack.contains(x)) {
-            System.out.print("true");
+            System.out.println("true");
         } else {
-            System.out.print(stack.peek());
+            System.out.println(Collections.min(stack));
         }
     }
 }
