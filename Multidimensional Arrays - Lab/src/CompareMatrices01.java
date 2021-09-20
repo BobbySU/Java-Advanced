@@ -38,10 +38,9 @@ public class CompareMatrices01 {
     private static int[][] readMatrix(int rows, Scanner scan) {
         int[][] matrix = new int[rows][];
         for (int row = 0; row < rows; row++) {
-            int[] arr = Arrays.stream(scan.nextLine().split("\\s+"))
+            matrix[row] = Arrays.stream(scan.nextLine().split("\\s+"))
                     .mapToInt(Integer::parseInt)
                     .toArray();
-            matrix[row] = arr;
         }
         return matrix;
     }
