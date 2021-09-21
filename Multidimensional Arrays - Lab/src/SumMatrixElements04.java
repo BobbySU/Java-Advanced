@@ -22,7 +22,7 @@ public class SumMatrixElements04 {
         System.out.println(sum);
     }
 
-    private static int[][] readMatrix(int rows, Scanner scan, String split) {
+   private static int[][] readMatrix(int rows, Scanner scan, String split) {
         int[][] matrix = new int[rows][];
         for (int row = 0; row < rows; row++) {
             matrix[row] = Arrays.stream(scan.nextLine().split(split))
