@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class DiagonalDifference03 {
+public class DiagonalDifference03A {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
@@ -16,19 +16,21 @@ public class DiagonalDifference03 {
     private static int readMatrixDiagonals(int[][] matrix) {
         int sumDiagonalA = 0;
         int sumDiagonalB = 0;
-        int r = 0, c = 0;
-        while (r < matrix.length && c < matrix[r].length) {
-            sumDiagonalA += matrix[r][c];
-            r++;
-            c++;
+        //Formola za Diagonal
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix.length; j++) {
+                if (i == j) {
+                    sumDiagonalA += matrix[i][j];
+                }
+            }
         }
-
-        r = matrix.length - 1;
-        c = 0;
-        while (r >= 0 && c < matrix[r].length) {
-            sumDiagonalB += matrix[r][c];
-            r--;
-            c++;
+        //Formola za Obraten Diagonal
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix.length; j++) {
+                if (j == matrix.length - i - 1) {
+                    sumDiagonalB += matrix[i][j];
+                }
+            }
         }
         return Math.abs(sumDiagonalA - sumDiagonalB);
     }
