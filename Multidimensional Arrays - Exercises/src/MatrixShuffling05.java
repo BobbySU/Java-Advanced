@@ -46,7 +46,6 @@ public class MatrixShuffling05 {
         return true;
     }
 
-
     private static void readMatrix(Scanner scan, String[][] matrix) {
         for (int i = 0; i < matrix.length; i++) {
             matrix[i] = scan.nextLine().split("\\s+");
