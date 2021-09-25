@@ -14,6 +14,12 @@ public class PeriodicTable03 {
             for (int j = 0; j < in.length; j++) {
                 element.add(in[j]);
             }
+//            начин 1
+//            for (String e : in) {element.add(e);}
+//            начин 2
+//            Collections.addAll(element, in);
+//            начин 3
+//            element.addAll(Arrays.asList(in));
         }
         element.forEach(e -> System.out.print(e + " "));
     }
