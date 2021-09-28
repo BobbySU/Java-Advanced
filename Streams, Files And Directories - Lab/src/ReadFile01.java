@@ -6,7 +6,7 @@ public class ReadFile01 {
     public static void main(String[] args) throws IOException {
         Scanner scan = new Scanner(System.in);
 
-        String path = "C:\\Users\\BOBBY\\Desktop\\04. Java-Advanced-Streams-Files-and-Directories-Resources\\input.txt";
+        String path = "input.txt";
         try {
             FileInputStream in = new FileInputStream(path);
 
