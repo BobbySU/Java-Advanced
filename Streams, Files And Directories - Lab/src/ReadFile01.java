@@ -12,8 +12,9 @@ public class ReadFile01 {
 
             int var = in.read();
             while (var != -1) {
-                System.out.print(var + " ");
+                System.out.print(Integer.toBinaryString(var) + " ");
                 var = in.read();
+
             }
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
