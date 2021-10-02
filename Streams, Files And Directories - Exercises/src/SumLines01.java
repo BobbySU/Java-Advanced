@@ -18,5 +18,17 @@ public class SumLines01 {
             }
             System.out.println(sum);
         }
+//        Vtori nachin ---->
+//        String paths = "input.txt";
+//        Files.readAllLines(Path.of(paths)).stream()
+//                .map(String :: toCharArray)
+//                .forEach(charArray ->
+//                {
+//                    int sum = 0;
+//                    for (char symbol : charArray) {
+//                        sum += symbol;
+//                    }
+//                    System.out.println(sum);
+//                });
     }
 }
