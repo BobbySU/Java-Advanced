@@ -6,7 +6,6 @@ import java.util.stream.Collectors;
 
 public class CountUppercaseWords03 {
     public static void main(String[] args) {
-
         Scanner scan = new Scanner(System.in);
 
         String[] in = scan.nextLine().split("\\s+");
