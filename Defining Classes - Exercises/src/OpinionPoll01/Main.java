@@ -18,6 +18,6 @@ public class Main {
             peoples.add(person);
         }
         peoples.stream().filter(e -> e.getAge() > 30).sorted(Comparator.comparing(Person::getName))
-                .forEach(e -> System.out.println(e.getName() + " - " + e.getAge()));
+                .forEach(e -> System.out.println(e.toString()));
     }
 }
