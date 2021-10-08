@@ -1,12 +1,12 @@
 package CompanyRoster02;
 
 public class Employee {
-        private String name;
-        private double salary;
-        private String position;
-        private String department;
-        private String email;
-        private int age;
+    private String name;
+    private double salary;
+    private String position;
+    private String department;
+    private String email;
+    private int age;
 
     public Employee(String name, double salary, String position, String department, String email, int age) {
         this.name = name;
@@ -18,11 +18,11 @@ public class Employee {
     }
 
     public Employee(String name, double salary, String position, String department) {
-        this(name,salary,position,department,"n/a",-1);
+        this(name, salary, position, department, "n/a", -1);
     }
 
     public Employee(String name, double salary, String position, String department, String email) {
-        this(name,salary,position,department,email,-1);
+        this(name, salary, position, department, email, -1);
     }
 
     public String getName() {
@@ -43,5 +43,10 @@ public class Employee {
 
     public int getAge() {
         return age;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s %.2f %s %d%n", this.name, this.salary, this.email, this.age);
     }
 }
