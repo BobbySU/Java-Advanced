@@ -1,11 +1,15 @@
 package Google07;
 
 public class Pokemon {
-    private String pokemonName;
-    private String pokemonType;
+    private String name;
+    private String type;
 
-    public Pokemon(String pokemonName, String pokemonType) {
-        this.pokemonName = pokemonName;
-        this.pokemonType = pokemonType;
+    public Pokemon(String name, String type) {
+        this.name = name;
+        this.type = type;
+    }
+
+    public String getInfo() {
+        return this.name + " " + this.type;
     }
 }

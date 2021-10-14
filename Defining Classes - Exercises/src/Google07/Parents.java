@@ -1,11 +1,15 @@
 package Google07;
 
 public class Parents {
-    private String parentName;
-    private String parentBirthday;
+    private String name;
+    private String birthday;
 
-    public Parents(String parentName, String parentBirthday) {
-        this.parentName = parentName;
-        this.parentBirthday = parentBirthday;
+    public Parents(String name, String birthday) {
+        this.name = name;
+        this.birthday = birthday;
+    }
+
+    public String getInfo() {
+        return this.name + " " + this.birthday;
     }
 }
